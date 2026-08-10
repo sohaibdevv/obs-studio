@@ -31,7 +31,6 @@ jobs:
           find .github additional_install_files build-aux cmake deps docs frontend libobs libobs-d3d11 libobs-metal libobs-opengl libobs-winrt plugins shared test -type f -exec chmod 0644 {} +
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add .github additional_install_files build-aux cmake deps docs frontend libobs libobs-d3d11 libobs-metal libobs-opengl libobs-winrt plugins shared test
+          git add -f .github additional_install_files build-aux cmake deps docs frontend libobs libobs-d3d11 libobs-metal libobs-opengl libobs-winrt plugins shared test
           git commit -m "Finish uploading OBS Studio source files"
           git push
-
